@@ -1,8 +1,11 @@
 # Helpful Macros for Pokérole system for Foundry
 
 ## [GM] Pokéfill : Auto-fill Pokémon sheets
+
 **Macro type :** script
+
 **Description :** Automatically fills attributes of a Pokémon, based on Moves it can learn.
+
 ```js
 const skillsRankData = {
   "starter": {attributes:0,skills:5,social:0, max: 1},
@@ -169,8 +172,11 @@ close:() => {
 ```
 
 ## [GM] PokéGen : Generates random Pokémons
+
 **Macro type :** script
+
 **Description :** Displays a dialog to generate random Pokémons
+
 ```js
 const COUNT = 6; // Number of generated Pokémons
 const LANG = 'en';
@@ -299,8 +305,11 @@ const searchDialog = new Dialog({
 ```
 
 ## Pokéballs
+
 **Macro type :** chat
+
 **Description :** Displays a chat message to throw Pokéballs, Greatballs and Ultraballs.
+
 ```js
 <div style="height:0.5em"></div><img style="border: 0; margin:-10px -30px -10px -5px;z-index: 1; position:relative; pointer-events: none;" src="https://www.pokepedia.fr/images/0/07/Miniature_Pok%C3%A9_Ball_HOME.png"/> [[/sc 4]]{Pokéball} <img style="border: 0; margin:-10px -30px -10px -5px;z-index: 1; position:relative; pointer-events: none;" src="https://www.pokepedia.fr/images/2/23/Miniature_Super_Ball_HOME.png"/> [[/sc 6]]{Greatball} <img style="border: 0; margin:-10px -30px -10px -5px;z-index: 1; position:relative; pointer-events: none;" src="https://www.pokepedia.fr/images/a/a2/Miniature_Hyper_Ball_HOME.png"/> [[/sc 8]]{Ultraball}
 <small style="display: block;margin-top: 6px">+1 succes if the Pokémon has half HP.
@@ -309,8 +318,11 @@ const searchDialog = new Dialog({
 ```
 
 ## PokéTypes : Weaknesses and strengths table
+
 **Macro type :** script
+
 **Description :** Displays a dialog to quickly see what's strong or weak against types.
+
 ```js
 const pokeapi = (url, base = 'https://pokeapi.co/api/v2/') => fetch(base+url).then((r) => r.json());
 const translate = (array, lang = 'en') => array.find((item) => item.language.name === lang).name;
